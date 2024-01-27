@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "all-test": "npx playwright test --workers=1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yuliiaanhurets/API-Playwright.git"
