@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test.describe('Reqres - API', () => {
+test.describe('User API - CRUD Operations', () => {
   test("should return list of users", async ({ request }) => {
     const issues = await request.get('api/users?page=2');
     expect(issues.status()).toBe(200);
